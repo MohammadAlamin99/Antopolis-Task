@@ -1,0 +1,630 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  /* Header css part start */
+
+  .MainNav {
+    color: #3F3F3F;
+    padding: 10px 0;
+    cursor: pointer;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .logo img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .navbar a {
+    color: #3F3F3F;
+    text-decoration: none;
+    margin: 0 18px;
+    transition: all linear .3s;
+  }
+
+
+  .navbar a:hover,
+  .navbar a.active {
+  color: #F72D57;
+    border-bottom: 2px solid #F72D57; /* Change the color to your preference */
+}
+  
+  .icon {
+    font-size: 1.5em;
+    position: absolute;
+    right: 186px;
+    top: 0;
+    transition: all linear .3s;
+  }
+  .icon:hover{
+    color: #F72D57;
+  }
+  
+  .btn button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    background-color: #F72D57;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 140px;
+    height: 46px;
+    border-radius: 5px;
+    transition: all linear .3s;
+  }
+  .btn button:hover {
+    background: #cc2647;
+  }
+  
+  .logo,
+  .navbar,
+  .icon,
+  .btn {
+    margin: 0.5em;
+  }
+
+  .navbar{
+    position: absolute;
+    top: 8px;
+    right: 240px;
+  }
+  
+  
+
+
+  /* Header css part end */
+
+
+
+  /* MainPart css part start */
+
+
+  .MainPart {
+    background-color: #f8f8f8; 
+}
+
+.container {
+    max-width: 1200px; 
+    margin: 0 auto;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 535px;
+}
+
+.mainpartCol {
+    flex: 1;
+}
+
+.mainpartCol h1 {
+    font-size: 2.5em;
+    color: #3F3F3F; 
+}
+
+.mainpartCol h1 span {
+    color: #F72D57;
+}
+
+.mainpartCol p {
+    font-size: 15px; 
+    color: #3F3F3F; 
+    margin-top: 20px;
+}
+
+.mainpartImg img {
+    height: 600px;
+    display: block; 
+    margin-top: 20px;
+}
+
+
+/* MainPart css end */
+
+
+
+/*Category part start */
+
+.mainCategory {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.categoryNav {
+  margin-bottom: 20px;
+}
+
+.categoryNav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.categoryNav li {
+  margin: 0 10px;
+  display: flex;
+}
+
+.categoryNav a {
+  text-decoration: none;
+  color: #F72D57;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.swiper-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.swiper-slide {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.swiper-slide img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.swiper-slide p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.swiper-slide button {
+  padding: 6px 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 10px;
+  background-color: #F72D57;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: all linear .3s;
+  border-radius: 5px;
+}
+
+
+.swiper-slide button:hover {
+  background-color: #cf2547;
+}
+
+
+.categoryNav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.categoryNav li {
+  margin: 0 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.categoryNav a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  display: block;
+  padding: 15px;
+  border-radius: 5px;
+  height: 22px;
+  width: 81px;
+  text-align: center;
+}
+
+
+
+.categoryNav ul li a {
+  color: #F72D57;
+  font-weight: 400;
+  position: relative;
+}
+.categoryNav li a:hover {
+  background-color: #F72D57;
+  color: #fff;
+}
+
+.mainCategory h1{
+  font-size: 26px;
+  color: #3F3F3F;
+}
+
+
+.mainCategory h1 span{
+  font-size: 26px;
+  color: #F72D57;
+}
+.categoryNav ul li.active a {
+  background-color: #F72D57;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.pizza{
+  position: absolute;
+  left: 8px;
+  top: 17px;
+  font-size: 18px;
+}
+
+.pizzaSlide img{
+  width: 65%;
+}
+
+.pizzaSlide h3{
+  font-size: 14px;
+  font-weight: 500;
+  color: #3F3F3F;
+}
+
+.pizzaSlide span{
+  font-size: 12px;
+  font-weight: 400;
+  color: #3F3F3F;
+}
+
+.pizzaSlide p{
+  font-size: 12px;
+  font-weight: 500;
+  color: #3F3F3F;
+}
+
+/*Category part end */
+
+
+/* get we know part start  */
+.getKnow {
+  background-color: #f5f5f5;
+  padding: 50px 0;
+}
+
+.weknock1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.weknock1 h2 {
+  font-size: 32px;
+  color: #3F3F3F;
+}
+
+.weknock1 h2 span{
+  font-size: 32px;
+  color: #F72D57;
+}
+.mainGet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.getAll {
+  max-width: 1200px;
+}
+
+.getimg img {
+  max-width: 100%;
+  height: auto;
+}
+
+.getText {
+  padding: 20px;
+}
+
+.getText h3 {
+  font-size: 24px;
+  color: #3F3F3F;
+}
+
+.getText h3 span {
+  font-size: 24px;
+  color: #F72D57;
+}
+.getText p {
+  font-size: 14px;
+  color: #3F3F3F;
+  line-height: 1.6;
+}
+.getAll{
+  display: flex;
+}
+
+/* get we know part end  */
+
+
+
+/* footer part start */
+.footer {
+  background-color: #F72D57;
+  color: white;
+  padding: 20px 0;
+}
+
+.fotcon {
+  display: flex;
+  justify-content: space-around;
+}
+
+.mainfooter {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.foot {
+  flex: 1;
+  margin: 10px;
+}
+
+.foot img {
+  max-width: 100%;
+  height: auto;
+}
+
+.foot ul {
+  list-style: none;
+  padding: 0;
+}
+
+.foot ul li {
+  margin-bottom: 10px;
+}
+
+
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+/* footer part end */
+
+
+
+
+
+/* ===============================================
+                  Responsive css
+=================================================*/
+
+@media (min-width: 1400px) {}
+
+  
+  @media (min-width: 1200px) and (max-width: 1300.98px) {
+    /* header part start */
+    .container {
+        max-width: 100%;
+        padding: 0 40px; 
+    }
+
+    .navbar
+{
+    right: 226px;
+  }
+
+  .icon
+{
+  font-size: 1.5em;
+  position: absolute;
+  right: 195px;
+  top: 0;
+  transition: all linear .3s;
+}
+  
+ /* header part end */
+
+  }
+
+
+
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+ /* header part start */
+
+ .container {
+  max-width: 100%;
+  padding: 0 15px; 
+}
+
+.navbar {
+  right: 223px;
+}
+  }
+
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .container {
+      max-width: 100%;
+      padding: 0 15px; 
+  }
+
+  .navbar {
+    right: 199px;
+  }
+
+  .navbar a
+{
+  color: #3F3F3F;
+  text-decoration: none;
+  margin: 0 9px;
+  transition: all linear .3s;
+}
+.icon
+{
+  font-size: 1.5em;
+  position: absolute;
+  right: 166px;
+  top: 0;}
+
+
+  .mainpartCol h1
+{
+  font-size: 16px;
+  color: #3F3F3F;
+}
+
+.mainpartCol p
+{
+  font-size: 7px;
+  color: #3F3F3F;
+  margin-top: 20px;
+}
+
+.mainpartImg img
+{
+  height: 467px;
+  display: block;
+  margin-top: 20px;
+}
+
+.main
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 397px;
+}
+.foot
+{
+  flex: 1;
+  margin: 12px;
+}
+  }
+
+
+
+
+
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    .container {
+      max-width: 100%;
+      padding: 0 15px;
+        position: relative;
+    }
+
+    .navbar {
+        position: static;
+        text-align: center;
+        margin-top: 10px;
+        right: 0;
+    }
+
+    .icon {
+      position: absolute;
+      right: 150px;
+      top: 6px;
+    }
+
+    
+    .logo,
+    .navbar,
+    .btn {
+        margin: 1em 0;
+    }
+
+    .navbar a {
+        margin: 8px 0;
+    }
+    .navbar
+    {
+        position: absolute;
+        left: -278px;
+        top: 5px;
+      }
+
+    .btn button {
+        display: none; }
+
+        .navbar a
+        {
+            padding: 4px;
+          }
+
+          
+        
+          .show-navbar .navbar {
+            display: block;
+            /* Add any other styles you need when the navbar is visible */
+          }
+
+        .logo img
+        {
+            max-width: 58%;
+            height: auto;
+            padding-right: 42px;
+            position: absolute;
+            right: -8px;
+            top: 22px;
+            height: 20px;
+          }
+
+
+          .mainpartCol h1
+{
+  font-size: 25px;
+  color: #3F3F3F;}
+
+  .mainpartImg img
+{
+  height: 274px;
+  display: block;
+  margin-top: 20px;
+}
+.mainpartCol p
+{
+  font-size: 10px;
+  color: #3F3F3F;
+  margin-top: 20px;
+}
+
+.main
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 309px;
+}
+
+
+
+
+  }
+
+
+
